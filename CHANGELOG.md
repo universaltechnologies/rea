@@ -1,5 +1,46 @@
 # Changelog
 
+## [6.5.0](https://github.com/morluto/rea/compare/rea-agents-6.4.0...rea-agents-6.5.0) (2026-10-11)
+
+
+### Bug Fixes
+
+* **artifacts:** preserve emitted ZIP entry identity ([e36c82b](https://github.com/morluto/rea/commit/e36c82becdd613787bcc59903f8b5fe14eb2f105))
+* **browser:** retain effective source-map response urls ([062723e](https://github.com/morluto/rea/commit/062723e44e937c1e1df865e9ae16184b41e70ae8))
+* **evaluation:** authenticate delivered Evidence citations ([844fa52](https://github.com/morluto/rea/commit/844fa52772c1533f7358a71a764da780503775a3))
+* **evidence:** normalize unknown revisions and preserve mutation intent ([#1733](https://github.com/morluto/rea/issues/1733)) ([2165045](https://github.com/morluto/rea/commit/21650455a9c90a26e725c3505a3c17054cc4516c)), closes [#1723](https://github.com/morluto/rea/issues/1723) [#1724](https://github.com/morluto/rea/issues/1724)
+* **managed:** distinguish .NET Standard targets from runtimes ([81dc64e](https://github.com/morluto/rea/commit/81dc64e3cd13dc8bfcac8898386717ece9721da1))
+* **mcp:** cancel evidence imports before session mutation ([e5699d2](https://github.com/morluto/rea/commit/e5699d23b173bbd0b68e3ab177d0b7583d6df345)), closes [#1746](https://github.com/morluto/rea/issues/1746)
+* **native:** retain failed command cleanup owners ([d9b4ae1](https://github.com/morluto/rea/commit/d9b4ae182d60dfd7fd5ba5bb539716413cbfdca6))
+
+
+### Performance Improvements
+
+* **cli:** defer command-specific modules until dispatch ([a82d14e](https://github.com/morluto/rea/commit/a82d14e4db4dca989ffa2e7dbe78fd43551da256))
+* **domain:** avoid duplicate readiness bundle validation ([29ff887](https://github.com/morluto/rea/commit/29ff887f6558cf00c0d6392889b890ed8a702a6f))
+* **evidence:** fuse streamed JSON token handling ([#1694](https://github.com/morluto/rea/issues/1694)) ([13e03e9](https://github.com/morluto/rea/commit/13e03e94363a007353fcb5dfedec764de12fc927))
+* **evidence:** reuse authenticated file snapshots during session import ([#1721](https://github.com/morluto/rea/issues/1721)) ([966dc3a](https://github.com/morluto/rea/commit/966dc3acde2880a0f94b2658e2a02180d505cafa))
+* **javascript:** reuse collected callable identities for returns ([d3088c3](https://github.com/morluto/rea/commit/d3088c3795f6c37cb3b6aec0bb0c371dd0640ee8))
+* **mcp:** keep Playwright and type-only imports off MCP startup ([#1691](https://github.com/morluto/rea/issues/1691)) ([0ecf3f2](https://github.com/morluto/rea/commit/0ecf3f2438ec96a6b543942869808018e8d84452))
+* **snapshot:** restore large legacy caches within live memory bounds ([092de8f](https://github.com/morluto/rea/commit/092de8f4b336b537579bd48d7d30135b7114371d))
+* **tests:** consolidate TypeScript dialect producer checks ([01762b1](https://github.com/morluto/rea/commit/01762b10c6a40370996e6dfa3a96ffcb27148f97))
+* **tests:** remove timed output and synchronize browser fixtures ([693ed33](https://github.com/morluto/rea/commit/693ed332b58d05192f55b8192d2c0c4bc4f4824a))
+* **tests:** reuse stateless workflows and immutable fixtures ([5f4c7ff](https://github.com/morluto/rea/commit/5f4c7ff6df0735d5a4461b5d0e6f2e466b888be0))
+
+
+### Documentation
+
+* celebrate 80,000 GitHub stars 🎉 ([#1752](https://github.com/morluto/rea/issues/1752)) ([6ff4d4a](https://github.com/morluto/rea/commit/6ff4d4a0500e5f9fb7601e1c5ae5dbbd85796d91))
+* **i18n:** celebrate 80,000 GitHub stars in translated READMEs ([#1758](https://github.com/morluto/rea/issues/1758)) ([953a0ce](https://github.com/morluto/rea/commit/953a0ce5bd3a8b44051eb9c16d8c9a20cad29e7c))
+* **setup:** confirm published 6.4.0 client support ([57c5aca](https://github.com/morluto/rea/commit/57c5acac2e13fd7f0e3832bc147c7ceda8c314f2))
+* **website:** highlight the setup guide on the homepage ([#1714](https://github.com/morluto/rea/issues/1714)) ([8be7ad4](https://github.com/morluto/rea/commit/8be7ad496c9a52a9986c4d3f6596de279b52df7e))
+
+
+### Continuous Integration
+
+* parallelize native verification and share test artifacts ([91f6840](https://github.com/morluto/rea/commit/91f6840c35e99e5f23612920d790a30d324ac115))
+* reduce macOS runner contention ([3f4ea32](https://github.com/morluto/rea/commit/3f4ea3218929baba0c30c2cb7eb7e7a829a1fc21))
+
 ## [6.4.0](https://github.com/morluto/rea/compare/rea-agents-6.3.0...rea-agents-6.4.0) (2026-10-11)
 
 ### Highlights
